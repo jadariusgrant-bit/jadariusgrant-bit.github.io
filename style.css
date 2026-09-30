@@ -41,12 +41,12 @@ h2 {
   font-weight: 900;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #f21b08;
+  color: #f50606;
 }
 
 .content > p {
   margin: 0;
-  color: #dc0909;
+  color: #070707;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -97,17 +97,17 @@ h2 {
   transform: translateY(-2px);
 }
 #interests h3 {
-  color: #e94560;
+  color: #000a0e;
 }
 
 #interests li {
   background: #090909;
-  border-color: #f7022b;
-  color: #f6042d;
+  border-color: #060606;
+  color: #f30404;
 }
 
 #interests li:hover {
-  background: #f0032b;
+  background: #0f97a1;
   color: #fff;
 }
 .sidebar-img {
@@ -189,7 +189,7 @@ nav {
 }
 
 nav h1 {
-  color: #e94560;
+  color: #289783;
 }
 
 .nav-li a {
@@ -197,6 +197,58 @@ nav h1 {
 }
 
 .nav-li a:hover {
-  background: #e94560;
-  color: #fff;
+  background: #030303;
+  color: #00080b;
+}
+/* Portfolio styles */
+.content h1 {
+  color: black;
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #444;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+#portfolio a:hover {
+  background: #1aaa92;
+  color: #020202;
+  transform: translateX(4px);
+}
+
+#portfolio a::after {
+  content: "->";
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
 }
